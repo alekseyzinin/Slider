@@ -11,3 +11,13 @@ const activeSlide = n => {
     }
     slide[n].classList.add('active');
 }
+
+const nextSlide = () => {
+    if(index == slides.length - 1) {
+        index = 0;
+        activeSlide(index)
+    } else {
+        index++;
+        activeSlide(index);
+    }
+}
