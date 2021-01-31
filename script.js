@@ -1,5 +1,5 @@
 const prev = document.getElementsById('btn-prev'),
-      next = document.getElementsById('btn-prev'),
+      next = document.getElementsById('btn-next'),
       slides = document.querySelectorAll('.slide'),
       dots = document.querySelectorAll('.dot');
 
