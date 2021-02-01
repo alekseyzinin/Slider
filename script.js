@@ -6,7 +6,6 @@ const prev = document.getElementsById('btn-prev'),
 let index = 0;
 
 const activeSlide = n => {
-    console.log(n);
     for(slide of slides) {
        slide.classList.remove('active');
     }
@@ -25,7 +24,7 @@ const nextSlide = () => {
 
 const prevSlide = () => {
     if(index == 0) {
-        index = slides.length - 1;
+        index = slides.length - 1
         activeSlide(index);
     } else {
         index--;
@@ -33,5 +32,5 @@ const prevSlide = () => {
     }
 }
 
-next.addEventListener('click' , nextSlide);
-prev.addEventListener('click' , prevSlide);
+next.addEventListener('click', nextSlide);
+prev.addEventListener('click', prevSlide);
